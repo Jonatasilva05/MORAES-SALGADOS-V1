@@ -19,7 +19,15 @@ header, nav, main, aside, footer {
 }
 
 header {
+    margin: 0;
+    color: #000000;
+    background:#979ba0;
 	flex: 1 1 100vw;
+}
+
+header a {
+    padding: 1.5%;
+    font-size: 1.8rem;
 }
 
 header #logo {
@@ -37,6 +45,7 @@ header #logo {
 	padding: 0px 5px 0px 5px;
 	cursor: pointer;
 	display: none;
+    color: #000000;
 }
 
 nav {
@@ -51,6 +60,9 @@ nav a {
 }
 
 main {
+    margin: 0;
+    /* background: url(../img/POR_SOL.jpg) no-repeat fixed; */
+    background: #2b3540;
 	flex: 20 1 500px;
 }
 
@@ -62,12 +74,12 @@ footer {
 	flex: 1 1 100vw;
 }
 
-a {
+a { 
 	text-decoration: none;
 	color: inherit;
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (max-width: 860px) {
 	#openMenu, #closeMenu {
 		display: block;
 	}
@@ -86,7 +98,7 @@ a {
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(255, 255, 255, 0.8);
+		background: rgba(212, 212, 212, 0.811);
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -94,11 +106,17 @@ a {
 		display: none;
 		opacity: 0;
 		transition: 0.3s;
+        color: #000000;
 	}
 
 	nav a {
+        font-size: 1.8rem;
 		margin: 3%;
 	}
+
+    nav a:hover {
+        color: #0a69cf;
+    }
 }
 
 body {
@@ -142,6 +160,10 @@ a {
     background: #f2f2f2;
 }
 
+.content p {
+    color:#1a2735;
+}
+
 .content:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16),
     0 3px 6px rgba(0,0,0,0.23);
@@ -154,6 +176,7 @@ img {
     text-align: center;
     margin: 0 auto;
     display: block;
+    border-radius: 5px;
 }
 
 P {
