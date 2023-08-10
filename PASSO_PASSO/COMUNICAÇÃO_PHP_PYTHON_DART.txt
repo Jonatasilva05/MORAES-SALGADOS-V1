@@ -1,0 +1,21 @@
+Mapa Das   
+ligacões   PHP-->PYTHON = shell_exec()
+	   PHP-->DART   = extensão cURL
+	   PYTHON-->DART= biblioteca Requests
+
+Para fazer a comunicação entre as linguagens de back-end, é necessário utilizar um servidor web. O servidor web é responsável por receber as solicitações do cliente e enviar as respostas correspondentes³. 
+
+Para fazer a comunicação entre o PHP e o Python, é possível utilizar a função shell_exec() do PHP¹. Para fazer a comunicação entre o PHP e o Dart, é possível utilizar a extensão cURL do PHP³. 
+
+Para fazer a comunicação entre o Python e o Dart, é possível utilizar a biblioteca Requests do Python¹.
+
+Origem: conversa com o Bing, 03/08/2023
+(1) Criando e consumindo webservices em PHP 5 e Zend Framework - DevMedia. https://www.devmedia.com.br/criando-e-consumindo-webservices-em-php-5-e-zend-framework/24937.
+(2) Como passar a variável do PHP para Python e obter o output. https://pt.stackoverflow.com/questions/557840/como-passar-a-vari%c3%a1vel-do-php-para-python-e-obter-o-output.
+(3) PHP vs Python: Uma Comparação Detalhada Entre as duas Linguagens - Kinsta. https://kinsta.com/pt/blog/php-vs-python/.
+
+//Onde Usar cada linguagem:
+
+O PHP é frequentemente utilizado em sites e aplicativos web1.
+O Python é frequentemente utilizado em aplicações científicas e de aprendizado de máquina3. 
+O Dart é frequentemente utilizado em aplicativos móveis e web
