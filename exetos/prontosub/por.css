@@ -6,13 +6,15 @@
 	box-sizing: border-box;
 }
 
+.ola{
+    display: none;
+}
+
 body {
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1 1 100vw;
 	margin: 3px;
-    font-family: sans-serif;
-    background:#f2f2f2;
 }
 
 header, nav, main, aside, footer {
@@ -63,14 +65,14 @@ nav a {
 
 main {
     margin: 0;
-    background: url(../img/POR_SOL.jpg) no-repeat fixed;
+    /* background: url(../img/POR_SOL.jpg) no-repeat fixed; */
     background: #2b3540;
 	flex: 20 1 500px;
 }
 
-aside {
+/* aside {
 	flex: 1 1 200px;
-}
+} */
 
 footer {
 	flex: 1 1 100vw;
@@ -79,6 +81,11 @@ footer {
 a { 
 	text-decoration: none;
 	color: inherit;
+}
+
+a img{
+    width: 150px;
+    height: 90px;
 }
 
 @media only screen and (max-width: 860px) {
@@ -121,6 +128,12 @@ a {
     }
 }
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background:#f2f2f2;
+}
+
 h3 {
     text-align: center;
     font-size: 30px;
@@ -132,88 +145,47 @@ a {
     text-decoration: none;
 }
 
-/* .galeria {
+.galeria {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-} */
-
-.galeria .content.active {
-    height: 400px;
 }
 
-.galeria .content {
+.content {
     width: 20%;
-    height: 200px;
     margin: 15px;
     box-sizing: border-box;
     float: left;
     text-align: center;
     border-radius: 20px;
-    cursor: pointer;
     padding-top: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
     0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
     background: #f2f2f2;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 20px;
-    transition: height 0.5s ease-in-out;
 }
 
 
-.galeria .content:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
-    0 3px 6px rgba(0,0,0,0.23);
-    transform: translate (0px, -8px);
-}
 
-.galeria .content .toggle{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background: #3d88ce;
-    border-end-end-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.galeria .content .toggle ion-icon {
-    color: white;
-    font-size: 1.4rem;
-    transition: transform ease-in-out 0.5s;
-}
-
-.galeria .content.active .toggle ioc-icon {
-    transform: rotate(-180deg);
-}
-
-.galeria .content .profile img {
-    width: 150px;
-    height: 100px;
+button {
     text-align: center;
-    margin: 0 auto;
-    display: block;
-    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.galeria .content ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-.galeria .content ul li {
-    padding: 5px;
+.cmp-1 {
+    background: #2183a2;
 }
 
 @media(max-width:1000px) {
@@ -228,7 +200,7 @@ a {
     }
 }
 
-.galeria{
+#comp {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -237,53 +209,39 @@ a {
     margin: 50px 0;
 }
 
- .content-comp {
-    width: 20%;
-    margin: 15px;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
-    0 10px 10px rgba(0,0,0,0.22);
-    transition: .4s;
-    background: #c1c1c1;
-}
-
- .content-comp .container-comp .card-comp .face{
+#comp .galeria .content .container .card .face{
     width: 100%;
     height: 200px;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 
- .content-comp .container-comp .card-comp .face.face1{
+#comp .galeria .content .container .card .face.face1{
     position: relative;
-    background: #282727;
+    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
-    border-radius: 5px;
 }
 
- .content-comp .container-comp .card-comp:hover .face.face1{
+#comp .galeria .content .container .card:hover .face.face1{
     background: #ff0057;
     transform: translateY(0);
 }
 
- .content-comp .container-comp .card-comp .face.face1 .content-face1{
+#comp .galeria .content .container .card .face.face1 .content-face1{
     opacity: 0.2;
     transition: 0.5s;
 }
 
- .content-comp .container-comp .card-comp:hover .face.face1 .content-face1{
+#comp .galeria .content .container .card:hover .face.face1 .content-face1{
     opacity: 1;
 }
 
- .content-comp .container-comp .card-comp .face.face1 .content-face1 img{
+#comp .galeria .content .container .card .face.face1 .content-face1 img{
     width: 200px;
+    height: 200px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -292,7 +250,7 @@ a {
     height: 20vh;
 }
 
- .content-comp .container-comp .card-comp .face.face1 .content-face1 h3{
+#comp .galeria .content .container .card .face.face1 .content-face1 h3{
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
@@ -300,7 +258,7 @@ a {
     font-size: 1.5em;
 }
 
- .content-comp .container-comp .card-comp .face.face2{
+#comp .galeria .content .container .card .face.face2{
     position: relative;
     background: #fff;
     display: flex;
@@ -310,14 +268,13 @@ a {
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
-    border-radius: 5px;
 }
 
- .content-comp .container-comp .card-comp:hover .face.face2{
+#comp .galeria .content .container .card:hover .face.face2{
     transform: translateY(0);
 }
 
- .content-comp .container-comp .card-comp .face.face2 .content-face2 p{
+#comp .galeria .content .container .card .face.face2 .content-face2 p{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -325,7 +282,7 @@ a {
     padding-top: 0 8px;
 }
 
- .content-comp .container-comp .card-comp .face.face2 .content-face2 a{
+#comp .galeria .content .container .card .face.face2 .content-face2 a{
     margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
@@ -335,7 +292,7 @@ a {
     border: 1px solid #333;
 }
 
- .content-comp .container-comp .card-comp .face.face2 .content-face2 a:hover{
+#comp .galeria .content .container .card .face.face2 .content-face2 a:hover{
     background: #333;
     color: #fff;
 }
