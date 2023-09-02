@@ -16,6 +16,46 @@ body{
     justify-content: space-between;
 }
 
+/* @media only screen and (max-width: 860px) {
+	#openMenu, #closeMenu {
+		display: block;
+	}
+
+	#openMenu {
+		margin-left: auto;
+	}
+
+	#closeMenu {
+		position: fixed;
+		right: 15px;
+		top: 15px;
+	}
+
+	nav {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(212, 212, 212, 0.811);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		display: none;
+		opacity: 0;
+		transition: 0.3s;
+        color: #000000;
+	}
+
+	nav a {
+        font-size: 1.8rem;
+		margin: 3%;
+	}
+
+    nav a:hover {
+        color: #0a69cf;
+    }
+} */
+
 .container .card{
     position: relative;
     cursor: pointer;
