@@ -79,6 +79,11 @@ a {
 	color: inherit;
 }
 
+a img{
+    width: 150px;
+    height: 90px;
+}
+
 @media only screen and (max-width: 860px) {
 	#openMenu, #closeMenu {
 		display: block;
@@ -152,7 +157,6 @@ a {
     float: left;
     text-align: center;
     border-radius: 20px;
-    cursor: pointer;
     padding-top: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
     0 10px 10px rgba(0,0,0,0.22);
