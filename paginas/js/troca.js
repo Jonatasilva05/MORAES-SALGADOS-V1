@@ -1,19 +1,34 @@
-let computador = document.querySelector(".content");
-let cell = document.querySelector('.content-comp');
-let mediaQuery = window.matchMedia("(max-width: 1100px)");
-
-function esconderElemento(mediaQuery) {
-  if (mediaQuery.matches) {
-    computador.style.display = "block";
-    cell.style.display = "none";
-  } else {
-    computador.style.display = "none";
-    cell.style.display = "block";
+window.onresize = function () {
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var divs = document.getElementsByClassName ("content-comp");
+  var divs2 = document.getElementsByClassName ("content");
+  for (var i = 0; i < divs.length ; i++) {
+    if (w < 1100) {
+      divs [i].style.display = "none";
+    }
+    else {
+      divs [i].style.display = "block";
+    }
   }
-}
+};
 
-esconderElemento(mediaQuery);
-mediaQuery.addListener(esconderElemento);
+
+// let computador = document.querySelector(".content");
+// let cell = document.querySelector('.content-comp');
+// let mediaQuery = window.matchMedia("(max-width: 1100px)");
+
+// function esconderElemento(mediaQuery) {
+//   if (mediaQuery.matches) {
+//     computador.style.display = "block";
+//     cell.style.display = "none";
+//   } else {
+//     computador.style.display = "none";
+//     cell.style.display = "block";
+//   }
+// }
+
+// esconderElemento(mediaQuery);
+// mediaQuery.addListener(esconderElemento);
 
 
 
