@@ -132,21 +132,20 @@ a {
     text-decoration: none;
 }
 
-.galeria {
+/* .galeria {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-}
+} */
 
 .galeria .content.active {
     height: 400px;
 }
 
 .galeria .content {
-    /* display: none; */
     width: 20%;
     height: 200px;
     margin: 15px;
@@ -238,7 +237,7 @@ a {
     margin: 50px 0;
 }
 
- .content-comp{
+ .content-comp {
     width: 20%;
     margin: 15px;
     box-sizing: border-box;
