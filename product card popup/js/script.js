@@ -15,7 +15,7 @@ document.querySelectorAll('.products-container .product').forEach(product =>{
 });
 
 previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
+  close.querySelector('.btnFechar').onclick = () =>{
     close.classList.remove('active');
     preveiwContainer.style.display = 'none';
   };

@@ -157,7 +157,7 @@ body{
    margin-top: 1rem;
 }
 
-.products-preview .preview .buttons a{
+.products-preview .preview .buttons a {
    flex:1 1 16rem;
    padding:1rem;
    font-size: 1.8rem;
@@ -179,6 +179,18 @@ body{
    color:#fff;
 }
 
+.products-preview .preview .buttons .btnFechar{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#ffffff;
+   border:.1rem solid #444;
+   background: #ff0000;
+}
+
+.products-preview .preview .buttons .btnFechar:hover{
+   background: #8f0505;
+}
 
 @media (max-width:991px){
 
