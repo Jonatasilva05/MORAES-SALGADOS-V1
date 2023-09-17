@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: blueviolet;
     /* background: url('/img/bolinho.jpeg') no-repeat; */
 }
 
@@ -15,8 +14,9 @@
 }
 
 .login-box {
+    background: violet;
     position: absolute;
-    top: 0;
+    top: 0 auto;
     right: 0;
     width: calc(100% - 58%);
     height: 100%;
