@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/login.css">
+
+    <title>Usuario LOGIN</title>
+</head>
+<body>
+    
+    <div class="backgroud"></div>
+
+    <div class="login-box">
+        <div class="form-login login">
+            <form action="#">
+                <h2>LOGIN</h2>
+
+                <div class="input-box">
+                    <span class="icon"><box-icon type='solid' name='envelope'></box-icon></span>
+                    <input type="email" required>
+                    <label for="">EMAIL</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><box-icon type='solid' name='lock-alt'></box-icon></span>
+                    <input type="password" required>
+                    <label for="">SENHA</label>
+                </div>
+                <div class="me-lembre">
+                    <label for="">
+                        <input type="checkbox">Relembre-me
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+
+                <div class="registrar">
+                    <p>Não tem conta?<a href="#" class="register-link">Cadastre-se</a> </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-login registrar">
+            <form action="#">
+                <h2>CADASTRE-SE</h2>
+                <div class="input-box">
+                    <span class="icon"><box-icon name='user' type='solid' ></box-icon></span>
+                    <input type="email" required>
+                    <label for="">NOME</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><box-icon type='solid' name='envelope'></box-icon></span>
+                    <input type="email" required>
+                    <label for="">EMAIL</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><box-icon type='solid' name='lock-alt'></box-icon></span>
+                    <input type="password" required>
+                    <label for="">SENHA</label>
+                </div>
+                <div class="me-lembre">
+                    <label for="">
+                        <input type="checkbox">Aceito os termos & condições
+                    </label>
+                </div>
+                <button type="submit" class="btn">Finalizar Cadastro</button>
+
+                <div class="registrar">
+                    <p>Já tenho conta!<a href="#" class="login-link"> Acesse</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+<!--JavaScript-->
+<script src="./js/login.js"></script>
+
+<!--JavaScript Font Icones-->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>

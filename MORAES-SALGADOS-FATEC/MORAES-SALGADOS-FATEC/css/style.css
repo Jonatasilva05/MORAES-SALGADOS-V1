@@ -126,9 +126,8 @@ footer {
 
 	#closeMenu {
 		position: fixed;
-		/* right: 50%; */
-      bottom: 50%;
-		top: 20%;
+		right: 15px;
+		top: 15px;
 	}
 
 	nav {
@@ -143,28 +142,17 @@ footer {
 		display: none;
 		opacity: 0;
 		transition: 0.3s;
-      color: #000000;
+        color: #000000;
 	}
 
 	nav a {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
 		margin: 3%;
-      position: relative;
-      bottom: 20%;
 	}
 
     nav a:hover {
-      color: #0a69cf;
+        color: #0a69cf;
     }
-
-    header nav .loginBtn {
-      background: #ff0101;
-      border-radius: 16px;
-      border: 2px solid #303030;
-      height: 8%;
-      display: flex;
-      align-items: center;
-   }
 }
 
 
