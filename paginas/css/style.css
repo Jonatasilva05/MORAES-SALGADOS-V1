@@ -133,6 +133,8 @@ a {
     text-decoration: none;
 }
 
+.main-active
+
 .galeria {
     display: flex;
     flex-wrap: wrap;

@@ -13,6 +13,10 @@
     filter: blur(10px);
 }
 
+.login-box.sumiu {
+    display: none;
+}
+
 .login-box {
     background: violet;
     position: absolute;
