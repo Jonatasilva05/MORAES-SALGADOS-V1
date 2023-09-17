@@ -1,5 +1,0 @@
-Usar Web Services para expor funcionalidades de um sistema para outro através de protocolos como SOAP ou REST. Você pode usar bibliotecas como requests ou urllib no Python, curl ou Guzzle no PHP, http ou axios no Node.js e http ou dio no Dart.
-
-Usar RPC (Remote Procedure Call) para invocar funções remotas entre os processos. Você pode usar bibliotecas como zerorpc, gRPC ou Pyro no Python, zerorpc ou gRPC no Node.js, gRPC ou XML-RPC no PHP e gRPC ou rpc no Dart.
-
-Usar filas de mensagens para enviar e receber mensagens assíncronas entre os processos. Você pode usar bibliotecas como RabbitMQ, Kafka ou ZeroMQ no Python, RabbitMQ, Kafka ou ZeroMQ no Node.js, RabbitMQ, Kafka ou ZeroMQ no PHP e RabbitMQ, Kafka ou ZeroMQ no Dart.
