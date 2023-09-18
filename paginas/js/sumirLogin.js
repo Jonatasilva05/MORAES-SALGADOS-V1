@@ -7,7 +7,8 @@ Ativador.addEventListener('click', () => {
 })
 
 removedor.addEventListener('click', () => {
-    te.classList.remove('sumiu');
+    te.classList.remove
+    ('sumiu');
 })
 
 
