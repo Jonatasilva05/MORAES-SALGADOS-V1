@@ -59,7 +59,7 @@ header #logo {
 	padding: 0px 5px 0px 5px;
 	cursor: pointer;
 	display: none;
-    color: #000000;
+   color: #000000;
 }
 
 header nav {
@@ -135,7 +135,7 @@ footer {
 		position: fixed;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(212, 212, 212, 0.811);
+		background: rgba(161, 161, 161, 0.733);
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

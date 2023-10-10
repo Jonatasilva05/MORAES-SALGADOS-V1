@@ -46,3 +46,15 @@ closeMenu.addEventListener('click', () => {
 		openMenu.removeAttribute('style')
 	}, 200);
 })
+
+
+const main = document.querySelector('#main');
+
+window.addEventListener('resize', () => {
+	if(main.offsetWidth <= 860){
+		main.classList.add('active');
+	}
+	else{
+		main.classList.remove('active');
+	}
+})
