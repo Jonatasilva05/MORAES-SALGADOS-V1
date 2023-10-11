@@ -166,7 +166,15 @@ footer {
       align-items: center;
    }
 }
-
+#main .container .texto-main{
+   color: white;
+   text-align: center;
+   font-size: 15px;
+}
+#main .container .texto-main img {
+   height: 200px;
+   border-radius: 15px;
+}
 
 .container{
    max-width: 1200px;
