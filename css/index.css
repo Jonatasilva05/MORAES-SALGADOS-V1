@@ -117,7 +117,17 @@
  .products-preview .preview .stars span{
     color:#999;
  }
- 
+
+ /*QUANDO TIVER A AVALIAÇÃO EM PHP*/
+ /* .estrelas input[type=radio]{
+   display: none;
+}.estrelas label i.fa:before{
+   content: '\f005';
+   color: #FC0;
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+   color: #CCC;
+} */
+
  .products-preview .preview p{
     line-height: 1.5;
     padding:1rem 0;
@@ -153,6 +163,12 @@
  
  .products-preview .preview .buttons a.cart:hover{
     background: #111;
+ }
+
+ .products-preview .preview .buttons a.buy {
+   background: #36da7a;
+   color: #111;
+   font-size: large;
  }
  
  .products-preview .preview .buttons a.buy:hover{

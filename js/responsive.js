@@ -1,3 +1,5 @@
+const mainNone = document.getElementById('main');
+
 /* Ação de eventos sobre o botão menu da tag nav (mobile). */
 /* Parâmetros: Nome do evento, função. */
 openMenu.addEventListener('click', () => {
@@ -5,6 +7,7 @@ openMenu.addEventListener('click', () => {
 	/* Sobrepõe a propriedade display: none aplicada no
 	   CSS por display: flex que o torna visível. */ 
 	menu.style.display = "flex"
+	mainNone.style.display = "none"
 
 	/* Captura o tamanho do menu nav e aplica na posição. */
 	menu.style.right = (menu.offsetWidth * -1) + 'px'
@@ -33,6 +36,7 @@ closeMenu.addEventListener('click', () => {
 	/* Faz o menu nav desaparecer na velocidade em que foi
 	   determinado na propriedade transition no CSS. */
 	menu.style.opacity = '0'
+	mainNone.style.display = "flex"
 
 	/* Captura o tamanho do menu nav e aplica na posição. */
 	menu.style.right = (menu.offsetWidth * -1) + 'px'

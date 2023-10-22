@@ -146,22 +146,25 @@ footer {
 	}
 
 	nav a {
-      font-size: 1.8rem;
+    	font-size: 1.8rem;
 		margin: 3%;
-      position: relative;
-      bottom: 20%;
+    	position: relative;
+    	bottom: 20%;
 	}
 
     nav a:hover {
-      color: #0a69cf;
+      	color: #0a69cf;
     }
 
     header nav .loginBtn {
-      background: #ff0101;
-      border-radius: 16px;
-      border: 2px solid #303030;
-      height: 8%;
-      display: flex;
-      align-items: center;
+      	background: #ff0101;
+      	border-radius: 16px;
+      	border: 2px solid #303030;
+      	height: 8%;
+      	display: flex;
+      	align-items: center;
    }
+   	header nav a{
+		font-size: 4.5rem;
+	}
 }

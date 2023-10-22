@@ -2,23 +2,23 @@
     color: white;
     text-align: center;
     font-size: 15px;
- }
- #main .container .texto-main img {
+}
+#main .container .texto-main img {
     height: 200px;
     width: 125px;
     border-radius: 10px;
  }
- .container .title{
+.container .title{
     font-size: 3.5rem;
     color:#c3c1c1;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
  }
- .image-cir{
+ .container .image-cir{
     margin: 5% 0;
  }
- .imagem-circulo {
+ .container .imagem-circulo {
     position: relative;
     width: 250px;
     height: 250px;
@@ -27,13 +27,13 @@
     justify-content: center;
     align-items: center ;
 }
-.imagem-circulo img {
+.container .imagem-circulo img {
     width:  90%;
     height: 90%;
     border-radius: 50%;
     border: .2rem solid red;
 }
- .spiner-cicle {
+.container .spiner-cicle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,5 +50,10 @@
 @keyframes circuloRodar {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@media (max-width: 767px) {
+    #main .container .row .col-sm .image-cir .imagem-circulo {
+        margin: 0 auto;
     }
 }
