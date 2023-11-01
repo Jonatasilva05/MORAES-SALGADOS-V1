@@ -68,6 +68,7 @@ input:checked + label {
 	height: 130px;
 }
 
+/*Ajusta bolinha atras do icone*/
 .selector {
 	--hole: #2196f3;
 	background: 
@@ -108,7 +109,7 @@ input:checked + label {
 	left: 502px;
 	filter: hue-rotate(1850deg);
 }
-
+/*Ajusta a barra de baixo do icone a que marca qual paginha estas*/
 .selector:after {
 	content: "";
 	position: absolute;
@@ -123,11 +124,6 @@ input:checked + label {
 input:checked ~ .selector:after {
 	box-shadow: 0 -17px 35px 8px var(--hole);
 }
-
-
-
-
-
 
 
 /*** ICONS ***/
@@ -151,7 +147,7 @@ input:checked + label:after {
 	transition: all 0.5s ease 0s;
 }
 
-
+/*ajusta o tamanho da casa*/
 label[for=m-home]:before {
 	width: 40px;
 	height: 40px;
@@ -167,6 +163,7 @@ label[for=m-home]:before {
 	background-size: 100% 100%, 100% 100%, 100% 27px;
 }
 
+/*ajusta o tamanho da casa*/
 label[for=m-home]:after {
 	width: 40px;
 	height: 40px;
