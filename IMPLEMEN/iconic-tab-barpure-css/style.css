@@ -19,11 +19,11 @@ nav.menu {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	height: 150px;
+	height: 95%;
 	padding: 0 29px 10px;
 	background: #fff0;
 	align-items: flex-end;
-	width: 600px;
+	width: 100%;
 }
 
 nav.menu:before {
@@ -85,28 +85,28 @@ input:checked + label {
 	border: 19px solid #181818;
 	border-radius: 100%;
 }
-
+/*ajusta o local onde a bolinha vai ficar*/
 #m-home:checked ~ .selector {
 	left: 23px;
 }
 
 #m-search:checked ~ .selector {
-	left: 143px;
+	left: 23.4%;
 	filter: hue-rotate(535deg);
 }
 
 #m-notification:checked ~ .selector {
-	left: 263px;
+	left: 44%;
 	filter: hue-rotate(950deg);
 }
 
 #m-favorites:checked ~ .selector {
-	left: 383px;
+	left: 65%;
 	filter: hue-rotate(1580deg);
 }
 
 #m-profile:checked ~ .selector {
-	left: 502px;
+	left: 86%;
 	filter: hue-rotate(1850deg);
 }
 /*Ajusta a barra de baixo do icone a que marca qual paginha estas*/
