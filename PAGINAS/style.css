@@ -196,7 +196,7 @@ h2 {
     text-decoration: underline;
 }
 
-.sair input {
+.sair a {
     padding: 10px;
     margin: 0; 
     border: none;
@@ -204,7 +204,8 @@ h2 {
     background: var(--color-text-button);
 }
 
-.sair input[value] {
+.sair a {
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
