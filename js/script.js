@@ -27,3 +27,14 @@ previewBox.forEach(close =>{
     preveiwContainer.style.display = 'none';
   };
 });
+
+// const a = document.querySelector('.cart')
+// a.addEventListener('click', () => {
+//   alert('Adicionado a lista com sucesso');
+// })
+
+// function addSuces() {
+//   if(a == 'click'){
+//     alert("Adicionado com sucesso a lista");
+//   }
+// }

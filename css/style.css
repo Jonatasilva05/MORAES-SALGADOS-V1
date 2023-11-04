@@ -34,7 +34,7 @@ header, nav, main, aside, footer {
 header {
     margin: 0;
     color: #000000;
-    background:#979ba0;
+    background:#cdd4de;
 	flex: 1 1 100vw;
 }
 
@@ -100,9 +100,9 @@ header nav .loginBtn:hover {
 }
 
 main {
-   margin: 0;
-   /* background: url(../img/POR_SOL.jpg) no-repeat fixed; */
-   background: #2b3540;
+   	margin: 0;
+   	/* background: url("../img/bg.jpg") no-repeat; fixed para fixar a imagem */
+   	background: #2b3540;
 	flex: 20 1 500px;
 }
 
