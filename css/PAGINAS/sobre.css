@@ -47,11 +47,13 @@
     border-right: .2rem solid white ; 
     animation: circuloRodar 8s linear infinite;
 }
+
 @keyframes circuloRodar {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
 @media (max-width: 767px) {
     #main .container .row .col-sm .image-cir .imagem-circulo {
         margin: 0 auto;
@@ -86,7 +88,7 @@
 
 .txtContainerRow h3 {
   /* letter-spacing:; Faz o espaçamento de cada letra */
-  word-spacing: 8px;
+  word-spacing: 8px;  /*Faz o espaçamento entre as palavras*/
   line-height: 2.7rem;
 }
 
@@ -117,17 +119,9 @@
 #contProfile {
   display: flex;
   justify-content: center;
-  position: relative;
-  left: 10%;
-}
-
-.txtProfile {
-  position: relative;
-  top: 30%;
-  left: 40%;
-  background: white;
-  height: 300px;
-  width: 500px;
+  align-items: center;
+  margin: 0 auto;
+  gap: 100px;
 }
 
 .cardProfile {
@@ -230,7 +224,9 @@
   left: 50%;
   transform: translateX(-50%) translateY(-64px);
 }
-
+.card-avatar:hover{
+  width: 150px;
+}
 .card-fullname {
   position: absolute;
   bottom: 0;
@@ -473,7 +469,27 @@
   transition: 0.3s;
 }
 
+.txtProfile {
+  background: white;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+}
+.txtProfile h2:hover{
+  border-bottom: 5px solid red;
+}
 .h2txtProfile {
   display: flex;
   justify-content: center; 
+  padding: 10px;
+  font-size: 3rem;
+}
+/* .h2txtProfile:hover{
+  border-bottom: 5px solid red;
+} */
+.txtProfile p {
+  font-size: 1.5rem;
+  margin: 0 20px;
+  /* background: red; */
+  text-align: center;
 }
