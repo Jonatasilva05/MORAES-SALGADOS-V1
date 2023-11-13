@@ -241,6 +241,7 @@
 .card-jobtitle {
   position: absolute;
   bottom: 0;
+  /* bottom: -5px; */
   font-size: 11px;
   white-space: nowrap;
   font-weight: 500;
