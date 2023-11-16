@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
 #main .container .texto-main{
     color: white;
     text-align: center;
@@ -96,7 +98,6 @@
   background: red;
 }
 
-@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -122,6 +123,9 @@
   align-items: center;
   margin: 0 auto;
   gap: 100px;
+  background: white;
+  width: 90%;
+  height: 100%;
 }
 
 .cardProfile {
@@ -471,13 +475,15 @@
 }
 
 .txtProfile {
-  background: white;
+  background: gray;
   height: 300px;
   width: 500px;
   text-align: center;
+  position: relative;
+  right: 3%;
 }
 .txtProfile h2:hover{
-  border-bottom: 5px solid red;
+  /* border-bottom: 5px solid red; */
 }
 .h2txtProfile {
   display: flex;
