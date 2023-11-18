@@ -1,3 +1,5 @@
+/*A PRIMEIRA VISTA DO USUARIO*/ 
+
  .container{
     max-width: 1200px;
     margin:0 auto;
@@ -57,6 +59,8 @@
     color:#444;
  }
  
+
+/*MEIO QUE O "HOVER ONDE VAI EM ADD LISTA E TALS"*/
  .products-preview{
     position: fixed;
     top:0; left:0;
