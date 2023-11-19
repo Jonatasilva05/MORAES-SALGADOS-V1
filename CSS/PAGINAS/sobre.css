@@ -28,16 +28,16 @@ main {
 }
 
 
-#containerProfile,
+/* #containerProfile,
 #containerCard {
     width: 100%;
     height: 100%;
-    /* Add your background pattern here */
+    /* Add your background pattern here 
     background-color: #313131;
     background-image: radial-gradient(rgb(135, 135, 135) 2px, transparent 0);
     background-size: 30px 30px;
     background-position: -5px -5px;
-}
+} */
 
 #containerProfile #contProfile {
   min-height: 100vh;
@@ -210,8 +210,10 @@ main {
 #containerProfile #contProfile .card-social {
   display: flex;
   align-items: center;
+  justify-content: center; /*Talvez usar ou não*/
   padding: 0 20px;
   margin-bottom: 30px;
+  gap: 15px;
 }
 #containerProfile #contProfile .card-social svg {
   fill: #a5b5ce;
@@ -232,9 +234,54 @@ main {
   border-radius: 50%;
   margin-right: 10px;
 }
-#containerProfile #contProfile .card-social a:hover svg {
-  fill: #637faa;
+
+#containerProfile #contProfile .card-social a:hover .face {
+  fill:  rgb(235, 234, 234);
+  background: #1877f2;
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  transition: 300ms linear;
+  transform: scale(1.2);
 }
+
+#containerProfile #contProfile .card-social a:hover .twit {
+  fill:  rgb(235, 234, 234);
+  background: #1877f2;
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  transition: 300ms linear;
+  transform: scale(1.2);
+}
+#containerProfile #contProfile .card-social a:hover .insta {
+  fill:  #b50445;
+  background: linear-gradient(150deg, rgb(131,58,180), rgb(251,60,131), rgb(252,176,64), rgb(252,219,3));
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  transition: 300ms linear;
+  transform: scale(1.2);
+}
+
+#containerProfile #contProfile .card-social a:hover .link {
+  fill:  rgb(235, 234, 234);
+  background: #1877f2;
+  border-radius: 3px;
+  border: 1px solid black;
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  transition: 300ms linear;
+  transform: scale(1.2);
+}
+
 #containerProfile #contProfile .card-social a:last-child {
   margin-right: 0;
 }
