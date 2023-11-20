@@ -1,7 +1,22 @@
 let preveiwContainer = document.querySelector('.products-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 
+//FUNÇÃO QUE ATIVA O "HOVER PARA A COMPRA FINAL DO PRODUTO" QUANDO ESTA NO CARD ORIGINAL NORMAL
 document.querySelectorAll('.products-container .product').forEach(product =>{
+  product.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+//FUNÇÃO QUE ATIVA O "HOVER PARA A COMPRA FINAL DO PRODUTO" QUANDO ESTA NO CARD DE EFEITO DE TRANSLAÇÃO
+document.querySelectorAll('.container.text-center .col').forEach(product =>{
   product.onclick = () =>{
     preveiwContainer.style.display = 'flex';
     let name = product.getAttribute('data-name');
@@ -27,6 +42,26 @@ previewBox.forEach(close =>{
     preveiwContainer.style.display = 'none';
   };
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const a = document.querySelector('.cart')
 // a.addEventListener('click', () => {
