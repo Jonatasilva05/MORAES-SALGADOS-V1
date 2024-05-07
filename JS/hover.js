@@ -37,7 +37,7 @@ previewBox.forEach(close =>{
 });
 
 previewBox.forEach(close =>{
-  close.querySelector('.fas.fa-times').onclick = () =>{
+  close.querySelector('.bi.bi-x-circle').onclick = () =>{
     close.classList.remove('active');
     preveiwContainer.style.display = 'none';
   };

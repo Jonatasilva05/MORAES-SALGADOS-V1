@@ -1,3 +1,4 @@
+//RESPONSIVIDADE DO CORPO DA PAGINA
 const mainNone = document.getElementById('main');
 
 /* Ação de eventos sobre o botão menu da tag nav (mobile). */
@@ -49,17 +50,4 @@ closeMenu.addEventListener('click', () => {
 		menu.removeAttribute('style')
 		openMenu.removeAttribute('style')
 	}, 200);
-})
-
-
-/*FAZ O MAIN SE TORNAR ACTIVE ASSIM ATIVANDO A RESPONSIVIDADE DO SITE COM O FRONT ORIGINAL FEITO A MÃO O SEM EFEITO TRANSLATIVO*/
-const main = document.querySelector('#main');
-
-window.addEventListener('resize', () => {
-	if(main.offsetWidth <= 1000){
-		main.classList.add('active');
-	}
-	else{
-		main.classList.remove('active');
-	}
 })
