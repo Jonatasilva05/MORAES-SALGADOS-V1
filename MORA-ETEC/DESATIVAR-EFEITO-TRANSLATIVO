@@ -10,8 +10,6 @@ function desactive() {
     cards.classList.add('nopHover');
 }
 
-
-
 .contentMenu.nopHover {
     width: 100%;
     height: 100%;
